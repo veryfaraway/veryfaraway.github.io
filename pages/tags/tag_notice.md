@@ -1,8 +1,8 @@
 ---
-title: "Mobile Pages"
+title: "Notice"
+tagName: notice
 search: exclude
-tagName: mobile
-permalink: tag_mobile.html
+permalink: tag_notice.html
 sidebar: home_sidebar
 folder: tags
 ---

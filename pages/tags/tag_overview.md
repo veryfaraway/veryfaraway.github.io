@@ -1,8 +1,8 @@
 ---
-title: "Mobile Pages"
+title: "Overview"
+tagName: overview
 search: exclude
-tagName: mobile
-permalink: tag_mobile.html
+permalink: tag_overview.html
 sidebar: home_sidebar
 folder: tags
 ---

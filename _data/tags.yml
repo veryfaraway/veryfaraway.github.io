@@ -1,4 +1,10 @@
 allowed-tags:
+  - notice
+  - overview
+  - install
+  - bugs
+  - news
+  - mobile
   - getting_started
   - content_types
   - navigation
@@ -6,7 +12,5 @@ allowed-tags:
   - publishing
   - single_sourcing
   - special_layouts
-  - collaboration
-  - news
   - troubleshooting
-  - mobile
+  - collaboration

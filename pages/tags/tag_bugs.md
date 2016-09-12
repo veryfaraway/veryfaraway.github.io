@@ -1,8 +1,8 @@
 ---
-title: "Mobile Pages"
+title: "Bugs"
+tagName: bugs
 search: exclude
-tagName: mobile
-permalink: tag_mobile.html
+permalink: tag_bugs.html
 sidebar: home_sidebar
 folder: tags
 ---

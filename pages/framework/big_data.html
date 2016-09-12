@@ -1,0 +1,71 @@
+---
+title: Big Data
+layout: list
+sidebar: home_sidebar
+keywords: big data, hadoop, echo-system, realtime
+permalink: big_data.html
+toc: false
+folder: system
+---
+<div class="home">
+
+    <div class="post-list">
+        <!-- for post in paginator.posts -->
+        {% for post in site.posts limit:100 %}
+        {% if  post.categories contains 'framework' and post.categories contains 'big data' %}
+                <div class="entry">
+                    <h2><a class="post-link" href="{{ post.url | remove: '/' }}">{{ post.title }}</a></h2>
+                    <div class="home-post-meta">
+                        {{ post.date | date: "%Y. %m. %d." }} &#8226;
+                        <span class="post-meta">
+                            {% for tag in post.tags %}
+                                <a href="{{ ' tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+                            {% endfor %}
+                        </span>
+                    </div>
+                    <div>
+                        {% if post.thumb %}
+                        <div class="thumb">
+                            <a href="{{ post.url }}"><img src="{{site.baseurl}}/images/thumbnails/{{post.thumb}}" height=96 alt="{{post.title}}"></a>
+                        </div>
+                        {% endif %}
+                        <div>
+                            <!--
+                             {% if post.summary %}
+                                 {{ post.summary | strip_html | strip_newlines | truncate: 160 }}
+                             {% else %}
+                                 {{ post.content | truncatewords: 50 | strip_html }}
+                             {% endif %}
+                             -->
+                            {{ post.content | truncatewords: 50 | strip_html }}
+                        </div>
+                        <div style="clear:left;"></div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Pagination links -->
+    <!--
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}/" class="previous">&laquo; Previous</a>
+        {% else %}
+        <span class="previous">&laquo; Previous</span>
+        {% endif %}
+        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}/" class="next">&raquo; Next</a>
+        {% else %}
+        <span class="next ">&raquo; Next</span>
+        {% endif %}
+    </div>
+    -->
+
+    <!--
+    <p><a href="feed.xml"" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
+    <hr/>
+    <p>See more posts from the <a href="news_archive.html">macOS Archive</a>. </p>
+    -->
+</div>

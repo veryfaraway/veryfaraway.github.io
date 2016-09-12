@@ -1,8 +1,8 @@
 ---
-title: "Mobile Pages"
+title: "Install"
+tagName: install
 search: exclude
-tagName: mobile
-permalink: tag_mobile.html
+permalink: tag_install.html
 sidebar: home_sidebar
 folder: tags
 ---

@@ -6,17 +6,18 @@ layout: default
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
         <p class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d,
-                %Y" }}
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: "%Y. %m. %d." }}
             </time>
-            {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                itemprop="name">/ {{ page.author }}</span></span>{% endif %}{% if page.tags != null %}/
-            {% assign projectTags = site.data.tags.allowed-tags %}
-            {% for tag in page.tags %}
-            {% if projectTags contains tag %}
-            <a href="{{ " tag_" | append: {{tag}}.html">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+            {% if page.author %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">/ {{ page.author }}</span>
+            </span>
             {% endif %}
-            {% endfor %}
+            {% if page.tags != null %} &#8226;
+                {% for tag in page.tags %}
+                <a href="{{ ' tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+                {% endfor %}
             {% endif %}
 
         </p>
@@ -24,37 +25,32 @@ layout: default
 
     </header>
 
-    <div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 주경야근 본문 상단 반응형 -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-7384479372850471"
-             data-ad-slot="5125663328"
-             data-ad-format="auto"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
     <div class="post-content" itemprop="articleBody">
 
         {% if page.summary %}
-        <div class="summary">{{page.summary}}</div>
+            <div class="summary">{{page.summary}}</div>
         {% endif %}
+
+        <div class="singlePostAds">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 주경야근 본문 상단 반응형 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7384479372850471"
+                 data-ad-slot="5125663328"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
         {{ content }}
     </div>
 
 </article>
 
-{% if site.disqus %}
-{% include disqus.html %}
-{% endif %}
-
-{{site.data.alerts.hr_shaded}}
-
-<div align="right">
+<br/>
+<div class="singlePostAds">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- 주경야근 본문 하단 -->
     <ins class="adsbygoogle"
@@ -66,5 +62,11 @@ layout: default
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+
+{% if site.disqus %}
+    <div class="post-content">{% include disqus.html %}</div>
+{% endif %}
+
+{{site.data.alerts.hr_shaded}}
 
 {% include footer.html %}
