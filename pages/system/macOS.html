@@ -26,7 +26,7 @@ folder: system
                     <div>
                         {% if post.thumb %}
                         <div class="thumb">
-                            <a class="post-link" href="{{ post.url }}">
+                            <a class="post-link" href="{{ post.url | remove: '/' }}">
                                 <!-- site.baseurl = {username}.github.io  -->
                                 <img src="{{site.github.url}}/images/thumbnails/{{post.thumb}}" height=96 alt="{{post.title}}">
                             </a>
