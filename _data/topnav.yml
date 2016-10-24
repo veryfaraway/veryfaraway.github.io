@@ -47,9 +47,8 @@ topnav_dropdowns:
     - title: Links
       folderitems:
         - title: 겨자씨
-          external_url: http://lovelywolf.tistory.com
+          external_url: https://veryfaraway.github.io/mustardseed/
         - title: 三人行必有我師
-          external_url: http://lifemate.tistory.com
+          external_url: https://veryfaraway.github.io/3buddies/
         - title: Jekyll Documentation Theme
           external_url: http://idratherbewriting.com/documentation-theme-jekyll
-
