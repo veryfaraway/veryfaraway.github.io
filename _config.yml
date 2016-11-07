@@ -107,4 +107,4 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # needed for sitemap.xml file only
 url: http://veryfaraway.github.io/digging
 
-gems: [jekyll-sitemap, jekyll-mentions, jekyll-redirect-from, jekyll-feed, jekyll-paginate, jekyll-coffeescript, jekyll-watch, jekyll-assets]
+gems: [jekyll-sitemap, jekyll-mentions, jekyll-redirect-from, jekyll-feed, jekyll-paginate, jekyll-coffeescript, jekyll-watch, jekyll-assets, jemoji]
