@@ -8,7 +8,7 @@ permalink: iTerm2_password_manager.html
 thumb: iTerm2-icon.png
 ---
 
-맥용 터미널 에뮬레이터 iTerm2가 얼마전 3.0 버전으로 업데이트 됐습니다. iTerm3로 발표될 줄 알았는데 버전이 3.0으로 올라갔습니다. :sweat_smile:
+맥용 터미널 에뮬레이터 iTerm2가 얼마전 3.0 버전으로 업데이트 됐습니다. iTerm3로 발표될 줄 알았는데 버전이 3.0으로 올라갔습니다.
 
 비록 공짜지만 [SecureCRT](https://www.vandyke.com/products/securecrt/)에 비해 좀 아쉬웠는데 이번 업데이트는 SecureCRT를 잊어도 될 정도로 강력한 기능들이 많이 추가가 됐습니다.
 
