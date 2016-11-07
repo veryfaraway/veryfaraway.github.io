@@ -1,7 +1,7 @@
 ---
 title: "iTerm2 Password Manager 사용해보자"
 categories: [programming, tools]
-tags: [iTerm2, ssh, macOS]
+tags: [tips, ssh]
 keywords: ssh, iTerm2, PasswordManager, macOS
 summary: "iTerm2 3.0에 새로 추가된 Password Manager 사용방법을 설명합니다."
 permalink: iTerm2_password_manager.html
